@@ -1,0 +1,21 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "auto-imports.d.ts", "components.d.ts", "global.d.ts" ,"src/**/*", "src/**/*.vue"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["vite/client"],
+    "verbatimModuleSyntax": false,
+    "lib": ["DOM", "ESNext"],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    // "esModuleInterop": true,
+    // "module": "ESNext"
+  },
+
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
+  ]
+}
